@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "functions": {
     "pages/api/*.js": {
       "maxDuration": 60
