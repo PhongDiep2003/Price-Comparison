@@ -33,7 +33,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        spaceGrotesk: ['Space Grotesk', 'sans-serif'],
+        mono: ['Roboto Mono', 'monospace'],
       },
       borderRadius: {
         10: "10px"

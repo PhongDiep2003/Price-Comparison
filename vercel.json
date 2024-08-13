@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "functions": {
+    "lib/**/*": {
+      "maxDuration": 60
+    },
+    "components/**/*": {
+      "maxDuration": 60
+    }
+  }
+}
