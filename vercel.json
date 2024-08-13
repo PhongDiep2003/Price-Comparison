@@ -1,11 +1,9 @@
 {
-  "version": 2,
+  "version": 3,
   "functions": {
-    "lib/**/*": {
-      "maxDuration": 60
-    },
-    "components/**/*": {
+    "pages/api/*.js": {
       "maxDuration": 60
     }
+   
   }
 }

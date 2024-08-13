@@ -4,6 +4,7 @@ import { scrapeProducts } from '@/lib/actions'
 import useStorage from '@/storage/storage'
 import { useRouter } from 'next/navigation'
 import { toast } from 'react-toastify'
+import axios from 'axios'
 
 type Product = {
   id: string,
@@ -58,8 +59,8 @@ const SearchBar = () => {
     if (!isValidAmazonUrl(searchParam)) return alert('Please enter a valid Amazon product url')
     try {
       setIsLoading(true)
-      const products = await scrapeProducts(searchParam, productName)
-      
+      const getProducts = await axios.get(`/api/scraper?url=${searchParam}&searchName=${productName}`)
+      const products = getProducts.data
       if (products) {
         populateStorage(products)
         successAlert()
