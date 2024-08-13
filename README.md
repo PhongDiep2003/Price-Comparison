@@ -7,4 +7,4 @@ Our application streamlines the process of price comparison across multiple e-co
 ## Technologies used
 
 - **Web Client:** Next.js, React, HTML, Tailwind css, TypeScript.
-- **Backend:** Bright Data (web scraping), Axios.
+- **Backend:** Bright Data (web scraping), Axios, Next Js serverless.
